@@ -10,7 +10,7 @@
         <span class="rounded"></span>
       </li>
       <li class="flex-row-center">
-        <img src="bonus-1.png" alt="bonus-1-icon" />
+        <img src="/bonus-1.png" alt="bonus-1-icon" />
         <span class="rounded gris"></span>
       </li>
     </ul>
