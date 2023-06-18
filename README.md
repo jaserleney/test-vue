@@ -1,6 +1,7 @@
 # Front End Test EOS
 
-This app was created as a test, thank you very much for your attention.”
+This app was created as a test, thank you very much for your attention.
+
 [DEMO](https://fronendtesteos.netlify.app)
 
 ## Recommended IDE Setup
