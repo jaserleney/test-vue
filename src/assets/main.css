@@ -1,0 +1,90 @@
+:root {
+  --primary-color: #24292e;
+  --secondary-color: #13b497;
+  --tertiary-color: #ffffff;
+  --quaternary-color: #2d3339;
+
+  --swiper-navigation-color: var(--tertiary-color);
+  --swiper-pagination-color: var(--tertiary-color);
+  --swiper-navigation-top-offset: 90%;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  color: var(--tertiary-color);
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+  }
+
+  70% {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.swiper,
+swiper-container {
+  width: 100%;
+  height: inherit !important;
+  border-radius: 1.073rem;
+}
+
+@media (width <= 1024px) {
+  :root {
+    --swiper-navigation-top-offset: 85%;
+  }
+}
+
+.blur-in {
+  animation: blur-in 0.4s linear both 0.4s;
+}
+
+@keyframes blur-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
